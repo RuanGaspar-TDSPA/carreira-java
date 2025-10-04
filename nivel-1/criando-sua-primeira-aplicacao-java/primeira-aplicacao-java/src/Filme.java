@@ -1,5 +1,5 @@
 // Exemplos de casting
-public class Filmes {
+public class Filme {
     double media = (9.8 + 6.3 + 8.0 ) / 3;
     int anoDeLancamento;
     String sinopse = """
