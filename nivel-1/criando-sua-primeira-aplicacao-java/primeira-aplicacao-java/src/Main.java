@@ -12,6 +12,8 @@ public static void main(String[] args) {
     System.out.println(perfil2.cumprimento);
     System.out.println(perfil2.pergunta);
 
+    Scanner sc = new Scanner(System.in);
+
     Anotacao nota1 = new Anotacao();
     nota1.anotar();
     System.out.println("Título: " + nota1.titulo);
@@ -28,6 +30,21 @@ public static void main(String[] args) {
     Subtracao subtracao = new Subtracao();
     subtracao.subtrair();
 
+    Comparacao comparacao = new Comparacao();
+    comparacao.autenticarIgnoreCase(sc);
+    comparacao.autenticar(sc);
+
+    Mensagem mensagem = new Mensagem();
+    mensagem.exibirMensagem();
+
+
+    Filmes filmes =  new Filmes();
+    filmes.exibirCasting();
+
+    ConversorTemp conversorTemp = new ConversorTemp();
+    conversorTemp.converterTemperatura(sc);
+
+    sc.close();
 }
 
 
