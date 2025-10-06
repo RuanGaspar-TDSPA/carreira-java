@@ -17,5 +17,5 @@ public class Loop2 {
         System.out.println("Média da avaliação " + mediaAvaliacao/totalDeNotas);
 
     }
-    
+
 }
