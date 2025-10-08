@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 /*
 Vimos como usar comparações para condicionais, integrar leitura do teclado com a classe Scanner, explorar alternativas
@@ -100,14 +101,34 @@ public class Praticando {
                 break;
             case 4:
                 // Crie um programa que solicite ao usuário um número e exiba a tabuada desse número de 1 a 10.
-
+                System.out.println("Escolha um número para a tabuada: ");
+                int numTabuada = sc.nextInt();
+                System.out.println("Tabuada do " + numTabuada);
+                for (int numTab = 1; numTab <= 10; numTab++) {
+                        System.out.println(numTabuada + "x" + numTab + ":" + (numTab * numTabuada));
+                }
                 break;
             case 5:
                 // Crie um programa que solicite ao usuário a entrada de um número inteiro. Verifique se o número é
                 // par ou ímpar e exiba uma mensagem correspondente.
+                System.out.println("Insira um número: ");
+                int numero = sc.nextInt();
+                // Usamos o operador % para ver o resto da divisão e saber se o valor de "numero" tem resto
+                if (numero % 2 ==0) {
+                    System.out.println("O número é par");
+                } else {
+                    System.out.println("O número é impar");
+                }
                 break;
             case 6:
                 // Crie um programa que solicite ao usuário um número e calcule o fatorial desse número.
+                System.out.println("Digite um número para calcular seu fatorial: ");
+                float numCalc = sc.nextFloat();
+                float numeroFatorial = 1;
+                for (float i = 1; i <= numCalc; i++) {
+                    numeroFatorial *= i;
+                }
+                System.out.println("O fatorial de " + numCalc + " é: " + numeroFatorial);
                 break;
                 default:
                     System.out.println("Opço invalida. Escolha entre 1 e 6.");
